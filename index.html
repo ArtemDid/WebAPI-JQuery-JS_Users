@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Users</title>
+    <link rel="web icon" href="https://findicons.com/files/icons/1994/vista_style_business_and_data/256/users.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <h2>Пользователи</h2>
+
+    <table id="id_orderItem">
+        <thead hidden = "true">
+            <tr>
+                <th>UserID</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>MiddleName</th>
+                <th>Password</th>
+                <th>BirthDate</th>
+                <th>Picture</th>
+                <th>Registered</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr hidden = "true">
+                <td>
+                    <input type="number" min="1" name="newUserID" />
+                </td>
+                <td>
+                    <input type="text" name="newFirstName" />
+                </td>
+                <td>
+                    <input type="text" name="newLastName" />
+                </td>
+                <td>
+                    <input type="text" name="newMiddleName" />
+                </td>
+                <td>
+                    <input type="password" name="newPassword" />
+                </td>
+                <td>
+                    <input type="date" name="newBirthDate" />
+                </td>
+                <td>
+                    <input type="text" name="newPicture" />
+                </td>
+                <td>
+                    <input type="date" name="newRegistered" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <input type="button" name="showItemToOrder" value="Show To User" />
+                </td>
+                <td colspan="1">
+                    <input type="button" name="addItemToOrder" value="Add To New User" />
+                </td>
+                <td colspan="1">
+                    <input type="button" name="addUser" hidden = "true" value="Submit" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table id="id_orderTable">
+        <thead>
+            <tr>
+                <th>UserID</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>MiddleName</th>
+                <th>Password</th>
+                <th>BirthDate</th>
+                <th>Picture</th>
+                <th>Registered</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>

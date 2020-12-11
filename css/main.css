@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+input {
+  width: 150px;
+  border-color: blue;
+  box-shadow: 0 0 10px rgba(216, 33, 33, 0.5);
+}
+
+#id_orderItem {
+  margin-bottom: 20px;
+}
+
+#id_orderTable td, #id_orderTable th {
+  min-width: 150px;
+  min-height: 10px;
+  margin-right: 10px;
+}
+
+#id_orderTable tr, #id_orderTable td {
+  border: 1px solid #02f016;
+}
